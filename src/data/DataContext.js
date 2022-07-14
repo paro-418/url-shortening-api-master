@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 const LinkContext = createContext({
   linkArray: [],
@@ -7,8 +7,18 @@ const LinkContext = createContext({
 });
 
 export const LinksContextProvider = (props) => {
-  const [linkArray, setLinkArray] = useState([]);
+  const getData = () => {
+    const fetchData = localStorage.getItem("myLinks");
+    if (fetchData) {
+      return JSON.parse(fetchData);
+    } else return [];
+  };
+  const [linkArray, setLinkArray] = useState(getData());
   const [isValidLnk, setIsValidLnk] = useState(true);
+
+  useEffect(() => {
+    localStorage.setItem("myLinks", JSON.stringify(linkArray));
+  }, [linkArray]);
 
   const addLinkHandler = (receivedLink) => {
     setIsValidLnk(true);
