@@ -1,5 +1,4 @@
 .list{
-    /* border: 2px solid blue; */
     display: flex;
     padding: 0 1rem ;
     align-items: center;
@@ -25,7 +24,6 @@
     cursor: pointer;
 }
 .btn:hover{
-
     background-color: #2acfcfbd;
 }
 
