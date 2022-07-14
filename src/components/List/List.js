@@ -4,8 +4,11 @@ import { useState } from "react";
 
 const List = (props) => {
   const [clicked, setClicked] = useState(false);
-  const btnActiveHandler = () => {
+  const btnActiveHandler = (event) => {
     setClicked((prevState) => !prevState);
+    const store =
+      event.currentTarget.parentElement.getElementsByTagName("p")[1].innerText;
+    navigator.clipboard.writeText(store);
   };
   return (
     <div className={classes.list}>

@@ -11,6 +11,7 @@ export const LinksContextProvider = (props) => {
   const [isValidLnk, setIsValidLnk] = useState(true);
 
   const addLinkHandler = (receivedLink) => {
+    setIsValidLnk(true);
     const fetchHandler = async () => {
       const response = await fetch(
         ` https://api.shrtco.de/v2/shorten?url=${receivedLink}`
@@ -20,9 +21,8 @@ export const LinksContextProvider = (props) => {
         setIsValidLnk(false);
         throw new Error(response.statusText + ", Not a valid URL!!");
       }
-      if (response.ok) {
-        setIsValidLnk(true);
-      }
+      // if (response.ok) {
+      // }
       const storeLink = {
         orglLnk: receivedLink,
         shrtLnk: shrtLnk.result.full_short_link,
