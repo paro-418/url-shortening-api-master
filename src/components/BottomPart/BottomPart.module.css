@@ -1,0 +1,56 @@
+.bottomPart {
+    margin-top: 4rem;
+}
+
+.H1{
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 0.5rem;
+}
+.description{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto  ;
+    font-weight: 600;
+    color: #9e9aa7;
+    margin-top: 0.5rem;
+}
+
+.cardContainer {
+  display: flex;
+  column-gap: 3rem;
+  margin-top: 3rem;
+}
+
+.icon {
+  background-color: hsl(257, 27%, 26%);
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.cardH2 {
+  margin: 1rem 0;
+}
+
+.cardP {
+  color: #9e9aa7;
+  
+}
+
+.card2{
+    margin-top: 2rem;
+    position: relative;
+}
+.card3{
+    position: relative;
+    margin-top: 4rem;
+}
+
+.card2::before,.card3::before{
+    content: "";
+    position: absolute;
+    width: 2.5rem;
+    height: 0.5rem;
+    background-color: #2acfcf;
+    transform: translate(-100%, 1500%);
+}

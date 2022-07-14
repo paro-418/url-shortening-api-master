@@ -1,0 +1,41 @@
+.topPart {
+  display: flex;
+  padding: 3rem 0;
+}
+
+.left {
+  flex-basis: 50%;
+}
+
+.leftHeading {
+  font-size: 4rem;
+}
+
+.description {
+  width: 80%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #bfbfbf;
+}
+
+.btn {
+  background-color: #2acfcf;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  margin-top: 2.5rem;
+}
+
+.right {
+  flex-basis: 50%;
+  display: flex;
+}
+
+.thumbnail {
+  width: 100%;
+  display: inline;
+  margin-left: 3rem;
+}

@@ -1,0 +1,29 @@
+.list{
+    /* border: 2px solid blue; */
+    display: flex;
+    padding: 0 1rem ;
+    align-items: center;
+    margin-bottom: 1rem;
+    column-gap: 1rem;
+}
+
+.orglLnk{
+    margin-right:auto ;
+}
+
+.shrtLnk{
+    color: #2acfcf;
+}
+
+.btn{
+    background-color: #2acfcf;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 0.2rem;
+}
+
+.btnActive{
+    background-color: hsl(257, 27%, 26%);
+}

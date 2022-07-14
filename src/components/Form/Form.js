@@ -6,8 +6,13 @@ const Form = () => {
   const inputRef = useRef();
   const submitLinkHandler = () => {};
   return (
-    <form onSubmit={submitLinkHandler} ref={inputRef}>
-      <input type="text" placeholder="shorten your link here"></input>
+    <form onSubmit={submitLinkHandler} className={classes.form}>
+      <input
+        type="text"
+        placeholder="shorten your link here"
+        ref={inputRef}
+        className={classes.input}
+      ></input>
       <Button type="submit" className={classes.btn}>
         shorten it!
       </Button>

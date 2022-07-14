@@ -1,0 +1,27 @@
+.form{
+    background-color: #3b3054;
+    background-image: url('../../images/bg-shorten-desktop.svg');
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.3rem;
+}
+
+.input{
+    padding: 0.5rem;
+    flex-basis: 82%;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.btn{
+    background-color: #2acfcf;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.6rem 2.5rem;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}

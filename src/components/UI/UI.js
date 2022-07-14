@@ -5,6 +5,7 @@ import Form from "../Form/Form";
 import Header from "../Header/Header";
 import SingleButton from "../SingleButton/SingleButton";
 import TopPart from "../TopPart/TopPart";
+import ListContainer from "../ListContainer/ListContainer"
 import classes from "./UI.module.css";
 
 const UI = () => {
@@ -12,6 +13,7 @@ const UI = () => {
     <Header/>
     <TopPart/>
     <Form/>
+    <ListContainer/>
     <BottomPart/>
     <SingleButton/>
     <Footer/>
