@@ -22,6 +22,11 @@
     border: none;
     padding: 0.3rem 1rem;
     border-radius: 0.2rem;
+    cursor: pointer;
+}
+.btn:hover{
+
+    background-color: #2acfcfbd;
 }
 
 .btnActive{
